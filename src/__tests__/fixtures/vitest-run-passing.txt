@@ -1,0 +1,120 @@
+ RUN  v3.2.6 C:/agentruntime/dependencies/token-funnel
+
+ ✓ src/__tests__/auth.test.ts (10 tests) 15ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+ ✓ src/__tests__/user.test.ts (10 tests) 15ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+ ✓ src/__tests__/billing.test.ts (8 tests) 11ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+ ✓ src/__tests__/session.test.ts (8 tests) 11ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+ ✓ src/__tests__/cache.test.ts (11 tests) 16ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+   ✓ creates a record
+ ✓ src/__tests__/router.test.ts (12 tests) 10ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+   ✓ creates a record
+   ✓ rejects invalid input
+ ✓ src/__tests__/engine.test.ts (12 tests) 10ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+   ✓ creates a record
+   ✓ rejects invalid input
+ ✓ src/__tests__/budget.test.ts (12 tests) 10ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+   ✓ creates a record
+   ✓ rejects invalid input
+ ✓ src/__tests__/signals.test.ts (8 tests) 11ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+ ✓ src/__tests__/lines.test.ts (11 tests) 16ms
+   ✓ creates a record
+   ✓ rejects invalid input
+   ✓ handles concurrent writes
+   ✓ returns cached value
+   ✓ expires after ttl
+   ✓ serializes correctly
+   ✓ parses edge cases
+   ✓ retries on failure
+   ✓ validates schema
+   ✓ emits the right event
+   ✓ creates a record
+
+ Test Files  10 passed (10)
+ Tests  90 passed (90)
+ Start at 08:05:40
+ Duration 812ms (transform 120ms, setup 4ms, collect 340ms, tests 180ms, environment 0ms, prepare 168ms)
+

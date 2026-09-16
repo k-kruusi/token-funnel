@@ -1,0 +1,82 @@
+diff --git a/src/engine.ts b/src/engine.ts
+index 1a2b3c4..5d6e7f8 100644
+--- a/src/engine.ts
++++ b/src/engine.ts
+@@ -10,7 +10,7 @@ export function runEngine(raw: string, profile: CategoryProfile) {
+ const maxChars = opts.maxChars ?? DEFAULT_MAX_CHARS;
+ const emergencyCap = opts.emergencyCap ?? maxChars * 4;
+ const minHeadLines = opts.minHeadLines ?? profile.defaultMinHeadLines;
+-const minTailLines = opts.minTailLines ?? profile.defaultMinTailLines;
++const minTailLines = opts.minTailLines ?? profile.defaultMinTailLines ?? 0;
+ const widenOnError = opts.isError === true;
+
+ const preprocessed = profile.preprocess ? profile.preprocess(raw) : raw;
+@@ -40,6 +40,10 @@ export function runEngine(raw: string, profile: CategoryProfile) {
+   const records = foldConsecutiveDuplicates(lines, tags);
+   const { kept, markers } = allocateBudget(records, maxChars, emergencyCap, minHeadLines, minTailLines);
+   const text = reconstruct(records, kept, profile, markers);
++
++  if (process.env.DEBUG_FUNNEL) {
++    console.error("funnel debug", { maxChars, emergencyCap });
++  }
+
+   return profile.postprocess ? profile.postprocess(text, raw) : text;
+ }
+diff --git a/package-lock.json b/package-lock.json
+index 9988776..1122334 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@agentruntime/token-funnel",
+-  "version": "0.1.0",
++  "version": "0.1.1",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+@@ -1200,15 +1200,15 @@
+     "node_modules/typescript": {
+-      "version": "5.6.2",
++      "version": "5.6.3",
+       "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.6.3.tgz",
+       "integrity": "sha512-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa==",
+       "dev": true
+     },
+     "node_modules/vitest": {
+-      "version": "3.2.5",
++      "version": "3.2.6",
+       "resolved": "https://registry.npmjs.org/vitest/-/vitest-3.2.6.tgz",
+       "integrity": "sha512-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb==",
+       "dev": true
+     },
+     "node_modules/zod": {
+-      "version": "3.24.0",
++      "version": "3.24.1",
+       "resolved": "https://registry.npmjs.org/zod/-/zod-3.24.1.tgz",
+       "integrity": "sha512-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc==",
+       "dev": true
+     }
+   }
+ }
+diff --git a/src/profiles/generic.ts b/src/profiles/generic.ts
+deleted file mode 100644
+index 4455667..0000000
+--- a/src/profiles/generic.ts
++++ /dev/null
+@@ -1,10 +0,0 @@
+-export const GENERIC_PROFILE = {};
+diff --git a/src/profiles/generic-v2.ts b/src/profiles/generic-v2.ts
+new file mode 100644
+index 0000000..7788990
+--- /dev/null
++++ b/src/profiles/generic-v2.ts
+@@ -0,0 +1,3 @@
++export const GENERIC_PROFILE_V2 = {};
++
++// replacement for the old generic profile
+diff --git a/src/profiles/old-name.ts b/src/profiles/new-name.ts
+rename from src/profiles/old-name.ts
+rename to src/profiles/new-name.ts
+diff --git a/assets/logo.png b/assets/logo.png
+index aabbcc1..ddeeff2 100644
+Binary files a/assets/logo.png and b/assets/logo.png differ

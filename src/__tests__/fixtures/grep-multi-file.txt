@@ -1,0 +1,33 @@
+src/engine.ts:5:import type { CategoryProfile, ClassificationRule, FunnelOptions, LineRecord, LineTag, ScanState } from "./types.js";
+src/engine.ts:12:export function runEngine(raw: string, profile: CategoryProfile, opts: FunnelOptions = {}): string {
+src/router.ts:1:import type { Category, CategoryProfile, FunnelOptions } from "./types.js";
+src/router.ts:87:export function funnel(raw: string, hint?: string, opts: FunnelOptions = {}): string {
+src/types.ts:36:export interface CategoryProfile {
+src/profiles/generic.ts:10:export const GENERIC_PROFILE: CategoryProfile = {
+src/profiles/git.ts:1:import type { CategoryProfile } from "../types.js";
+src/profiles/generated.ts:1:export const line1: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:2:export const line2: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:3:export const line3: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:4:export const line4: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:5:export const line5: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:6:export const line6: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:7:export const line7: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:8:export const line8: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:9:export const line9: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:10:export const line10: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:11:export const line11: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:12:export const line12: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:13:export const line13: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:14:export const line14: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:15:export const line15: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:16:export const line16: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:17:export const line17: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:18:export const line18: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:19:export const line19: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:20:export const line20: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:21:export const line21: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:22:export const line22: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:23:export const line23: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:24:export const line24: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/generated.ts:25:export const line25: CategoryProfile = { name: "generic" } as CategoryProfile;
+src/profiles/file-read.ts:36:export const FILE_READ_PROFILE: CategoryProfile = {

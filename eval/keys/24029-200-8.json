@@ -1,0 +1,99 @@
+{
+  "seed": 24029,
+  "scale": 200,
+  "noise": 8,
+  "tableFingerprint": "sha256:d229c993282e0359c226ece7d3356b49f8611a4c4d08f21662dcd9251ef4425c",
+  "modelId": null,
+  "questions": [
+    {
+      "qid": "count.0",
+      "tier": "count",
+      "prompt": "How many rows have label = beta?",
+      "expected": "32"
+    },
+    {
+      "qid": "count.1",
+      "tier": "count",
+      "prompt": "How many rows have label = zeta?",
+      "expected": "37"
+    },
+    {
+      "qid": "count.2",
+      "tier": "count",
+      "prompt": "How many rows have label = epsilon?",
+      "expected": "33"
+    },
+    {
+      "qid": "count.3",
+      "tier": "count",
+      "prompt": "How many rows have label = gamma?",
+      "expected": "34"
+    },
+    {
+      "qid": "count.4",
+      "tier": "count",
+      "prompt": "How many rows have label = beta?",
+      "expected": "32"
+    },
+    {
+      "qid": "filter-count.0",
+      "tier": "filter-count",
+      "prompt": "How many rows have a date on or after 2026-01-07 and before 2026-02-06 and label = gamma?",
+      "expected": "4"
+    },
+    {
+      "qid": "filter-count.1",
+      "tier": "filter-count",
+      "prompt": "How many rows have a date on or after 2026-05-05 and before 2026-06-04 and label = gamma?",
+      "expected": "4"
+    },
+    {
+      "qid": "filter-count.2",
+      "tier": "filter-count",
+      "prompt": "How many rows have a date on or after 2026-02-11 and before 2026-03-13 and label = delta?",
+      "expected": "5"
+    },
+    {
+      "qid": "filter-count.3",
+      "tier": "filter-count",
+      "prompt": "How many rows have a date on or after 2026-02-02 and before 2026-03-04 and label = alpha?",
+      "expected": "4"
+    },
+    {
+      "qid": "filter-count.4",
+      "tier": "filter-count",
+      "prompt": "How many rows have a date on or after 2026-05-04 and before 2026-06-03 and label = delta?",
+      "expected": "5"
+    },
+    {
+      "qid": "temporal.0",
+      "tier": "temporal",
+      "prompt": "What is the label of the earliest row for user u012? (Exactly one row holds that user's earliest date.)",
+      "expected": "beta"
+    },
+    {
+      "qid": "temporal.1",
+      "tier": "temporal",
+      "prompt": "What is the label of the earliest row for user u022? (Exactly one row holds that user's earliest date.)",
+      "expected": "beta"
+    },
+    {
+      "qid": "temporal.2",
+      "tier": "temporal",
+      "prompt": "What is the label of the earliest row for user u005? (Exactly one row holds that user's earliest date.)",
+      "expected": "zeta"
+    },
+    {
+      "qid": "temporal.3",
+      "tier": "temporal",
+      "prompt": "What is the label of the earliest row for user u021? (Exactly one row holds that user's earliest date.)",
+      "expected": "epsilon"
+    },
+    {
+      "qid": "temporal.4",
+      "tier": "temporal",
+      "prompt": "What is the label of the earliest row for user u028? (Exactly one row holds that user's earliest date.)",
+      "expected": "delta"
+    }
+  ]
+}

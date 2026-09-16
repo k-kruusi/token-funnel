@@ -1,0 +1,31 @@
+{
+  "name": "@agentruntime/token-funnel",
+  "version": "0.1.0",
+  "description": "Pure, dependency-free output compressor: classify command/tool output into a category profile (git, test-output, build-output, grep, file-read, generic), then compress it under a token budget while never dropping error-signal content. Shared by tools and traffic-mirror.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "!dist/__tests__",
+    "!dist/**/*.js.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit && tsc -p eval --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-kruusi/claude-supervisor.git",
+    "directory": "dependencies/token-funnel"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}

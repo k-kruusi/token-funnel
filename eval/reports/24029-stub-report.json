@@ -1,0 +1,656 @@
+{
+  "seed": 24029,
+  "commit": "c0d3f2bbe6e64b3489c9e91a66101e521dbf9fcc",
+  "budget": 50000,
+  "noise": 8,
+  "retrievalBudget": 8000,
+  "qpt": 5,
+  "modelId": "stub-deterministic-v1",
+  "temperature": 0,
+  "samplesPerQ": 1,
+  "generatedAt": "2026-07-21T00:03:52.876Z",
+  "perTier": {
+    "count": {
+      "armRaw": 0.5,
+      "armFunnel": 0.5
+    },
+    "filter-count": {
+      "armRaw": 0.5,
+      "armFunnel": 0.5
+    },
+    "temporal": {
+      "armRaw": 0.6,
+      "armFunnel": 0.6
+    }
+  },
+  "scaleCurve": [
+    {
+      "scale": 50,
+      "tableFingerprint": "sha256:47cdd9b8dd00a72b17101cec89197ffaa880b95ba4df96f4f45aa4ae4163ccb2",
+      "armRaw_acc": 1,
+      "armFunnel_acc": 1,
+      "armRaw_chars": 34472,
+      "armFunnel_chars": 34472,
+      "ccrRetrievals": 0,
+      "retrievalBudgetExhaustions": 0
+    },
+    {
+      "scale": 200,
+      "tableFingerprint": "sha256:d229c993282e0359c226ece7d3356b49f8611a4c4d08f21662dcd9251ef4425c",
+      "armRaw_acc": 0.067,
+      "armFunnel_acc": 0.067,
+      "armRaw_chars": 50000,
+      "armFunnel_chars": 57948,
+      "ccrRetrievals": 30,
+      "retrievalBudgetExhaustions": 15
+    }
+  ],
+  "effectiveContext": {
+    "armRaw_cliffScale": 200,
+    "armFunnel_cliffScale": 200,
+    "deltaCliff": 0
+  },
+  "charsDelivered": "armRaw_chars/armFunnel_chars are printed per scale — maxChars is SOFT (funnel may deliver slightly under/over), so arm fairness is auditable rather than assumed (A#7). Funnel charsDelivered per item additionally counts retrieved chars.",
+  "items": [
+    {
+      "scale": 50,
+      "qid": "count.0",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.1",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.2",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.3",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.4",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.0",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.1",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.2",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.3",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.4",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.0",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.1",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.2",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.3",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.4",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "count.0",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "count.1",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "count.2",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "count.3",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "count.4",
+      "tier": "count",
+      "arm": "raw",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.0",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.1",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.2",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.3",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.4",
+      "tier": "filter-count",
+      "arm": "raw",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.0",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.1",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.2",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.3",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.4",
+      "tier": "temporal",
+      "arm": "raw",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 0,
+      "charsDelivered": 50000,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.0",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.1",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.2",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.3",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "count.4",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.0",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.1",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.2",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.3",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "filter-count.4",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.0",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.1",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.2",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.3",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 50,
+      "qid": "temporal.4",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 0,
+      "charsDelivered": 34472,
+      "retrievalError": false
+    },
+    {
+      "scale": 200,
+      "qid": "count.0",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "count.1",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "count.2",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "count.3",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "answered-wrong",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "count.4",
+      "tier": "count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.0",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.1",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.2",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.3",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "filter-count.4",
+      "tier": "filter-count",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.0",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.1",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.2",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.3",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "gaveUp",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    },
+    {
+      "scale": 200,
+      "qid": "temporal.4",
+      "tier": "temporal",
+      "arm": "funnel",
+      "graderState": "answered-correct",
+      "ccrRetrievals": 2,
+      "charsDelivered": 65492,
+      "retrievalError": true
+    }
+  ]
+}

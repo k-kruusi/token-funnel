@@ -1,0 +1,26 @@
+src/engine.ts:12:7 - error TS2322: Type 'string' is not assignable to type 'number'.
+
+12 const budget: number = opts.maxChars;
+         ~~~~~~
+
+  src/types.ts:54:3
+    54   maxChars?: number;
+         ~~~~~~~~
+    The expected type comes from property 'maxChars' which is declared here on type 'FunnelOptions'
+
+src/router.ts:41:5 - error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+
+41     TOOL_NAME_TO_CATEGORY[hint]
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/profiles/git.ts:33:9 - error TS2698: Spread types may only be created from object types.
+
+33         ...state.counters,
+           ~~~~~~~~~~~~~~~~~
+
+Found 3 errors in 3 files.
+
+Errors  Files
+     1  src/engine.ts:12
+     1  src/router.ts:41
+     1  src/profiles/git.ts:33

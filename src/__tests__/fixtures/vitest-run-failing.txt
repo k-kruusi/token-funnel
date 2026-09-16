@@ -1,0 +1,54 @@
+ RUN  v3.2.6 C:/agentruntime/dependencies/token-funnel
+
+ ✓ src/__tests__/lines.test.ts (10 tests) 3ms
+ ✓ src/__tests__/signals.test.ts (22 tests) 3ms
+ ❯ src/__tests__/budget.test.ts (11 tests | 2 failed) 8ms
+   ✓ allocateBudget > always keeps keep_always records regardless of budget
+   ✓ allocateBudget > keeps keep_always in full and marks the soft-budget-exceeded overage
+   × allocateBudget > truncates keep_always only when it exceeds the emergency cap
+     → expected [ true, true, true, true, … ] to include false
+   ✓ allocateBudget > spends remaining budget in priority order
+   ✓ allocateBudget > force-keeps minHeadLines and minTailLines regardless of tag
+   × allocateBudget > trims a tier from the middle, preserving both head and tail
+     → expected false to be true // Object.is equality
+   ✓ reconstruct > silently omits a single dropped line
+   ✓ reconstruct > collapses a run of consecutive dropped same-tag records
+   ✓ reconstruct > always shows the redundant placeholder
+   ✓ reconstruct > appends the soft-budget-exceeded marker
+   ✓ reconstruct > appends the emergency-cap truncation marker
+ ✓ src/__tests__/engine.test.ts (7 tests) 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+FAIL src/__tests__/budget.test.ts > allocateBudget > truncates keep_always only when it exceeds the emergency cap
+AssertionError: expected [ true, true, true, true, … ] to include false
+
+- Expected
++ Received
+
+- Array [
+-   ... 100 items
+- ]
+
+ ❯ src/__tests__/budget.test.ts:30:29
+     28|     const { kept, markers } = allocateBudget(records, 100_000, 500, 0, 0);
+     29|     expect(kept.some((k) => !k)).toBe(true);
+     30|     expect(markers.emergencyTruncatedChars).toBeGreaterThan(0);
+        | ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯
+     ❯ Object.<anomymous> (src/__tests__/budget.test.ts:30)
+
+FAIL src/__tests__/budget.test.ts > allocateBudget > trims a tier from the middle, preserving both head and tail of that tier
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/__tests__/budget.test.ts:70:20
+
+Test Files  1 failed | 4 passed (5)
+     Tests  2 failed | 48 passed (48)
+  Start at 08:02:11
+  Duration 312ms (transform 52ms, setup 0ms, collect 62ms, tests 12ms, environment ms, prepare 190ms)

@@ -1,0 +1,86 @@
+> @agentruntime/token-funnel@0.1.0 build
+> tsc
+
+webpack 5.94.0 compiling...
+ 20% building 1/5 modules 0 active
+ 40% building 2/5 modules 0 active
+ 60% sealing 3/5 modules 0 active
+ 80% emitting 4/5 modules 0 active
+ 100% hashing 5/5 modules 0 active
+webpack compiled successfully in 842 ms
+
+asset index.js 128 KiB [emitted] [minimized] (name: main)
+asset index.js.map 512 KiB [emitted] [dev] (name: main)
+runtime modules 1.2 KiB 3 modules
+cacheable modules 84.6 KiB
+  ./src/index-v0.ts 1.0 KiB [built] [code generated]
+  ./src/engine-v1.ts 2.1 KiB [built] [code generated]
+  ./src/router-v2.ts 3.2 KiB [built] [code generated]
+  ./src/types-v3.ts 4.3 KiB [built] [code generated]
+  ./src/internal/lines-v4.ts 5.4 KiB [built] [code generated]
+  ./src/internal/signals-v5.ts 6.5 KiB [built] [code generated]
+  ./src/internal/budget-v6.ts 7.6 KiB [built] [code generated]
+  ./src/profiles/git-v7.ts 8.7 KiB [built] [code generated]
+  ./src/profiles/test-output-v8.ts 9.8 KiB [built] [code generated]
+  ./src/profiles/build-output-v9.ts 1.9 KiB [built] [code generated]
+  ./src/profiles/grep-v10.ts 2.0 KiB [built] [code generated]
+  ./src/profiles/file-read-v11.ts 3.1 KiB [built] [code generated]
+  ./src/profiles/generic-v12.ts 4.2 KiB [built] [code generated]
+  ./src/index-v13.ts 5.3 KiB [built] [code generated]
+  ./src/engine-v14.ts 6.4 KiB [built] [code generated]
+  ./src/router-v15.ts 7.5 KiB [built] [code generated]
+  ./src/types-v16.ts 8.6 KiB [built] [code generated]
+  ./src/internal/lines-v17.ts 9.7 KiB [built] [code generated]
+  ./src/internal/signals-v18.ts 1.8 KiB [built] [code generated]
+  ./src/internal/budget-v19.ts 2.9 KiB [built] [code generated]
+  ./src/profiles/git-v20.ts 3.0 KiB [built] [code generated]
+  ./src/profiles/test-output-v21.ts 4.1 KiB [built] [code generated]
+  ./src/profiles/build-output-v22.ts 5.2 KiB [built] [code generated]
+  ./src/profiles/grep-v23.ts 6.3 KiB [built] [code generated]
+  ./src/profiles/file-read-v24.ts 7.4 KiB [built] [code generated]
+  ./src/profiles/generic-v25.ts 8.5 KiB [built] [code generated]
+  ./src/index-v26.ts 9.6 KiB [built] [code generated]
+  ./src/engine-v27.ts 1.7 KiB [built] [code generated]
+  ./src/router-v28.ts 2.8 KiB [built] [code generated]
+  ./src/types-v29.ts 3.9 KiB [built] [code generated]
+  ./src/internal/lines-v30.ts 4.0 KiB [built] [code generated]
+  ./src/internal/signals-v31.ts 5.1 KiB [built] [code generated]
+  ./src/internal/budget-v32.ts 6.2 KiB [built] [code generated]
+  ./src/profiles/git-v33.ts 7.3 KiB [built] [code generated]
+  ./src/profiles/test-output-v34.ts 8.4 KiB [built] [code generated]
+  ./src/profiles/build-output-v35.ts 9.5 KiB [built] [code generated]
+  ./src/profiles/grep-v36.ts 1.6 KiB [built] [code generated]
+  ./src/profiles/file-read-v37.ts 2.7 KiB [built] [code generated]
+  ./src/profiles/generic-v38.ts 3.8 KiB [built] [code generated]
+  ./src/index-v39.ts 4.9 KiB [built] [code generated]
+  ./src/engine-v40.ts 5.0 KiB [built] [code generated]
+  ./src/router-v41.ts 6.1 KiB [built] [code generated]
+  ./src/types-v42.ts 7.2 KiB [built] [code generated]
+  ./src/internal/lines-v43.ts 8.3 KiB [built] [code generated]
+  ./src/internal/signals-v44.ts 9.4 KiB [built] [code generated]
+  ./src/internal/budget-v45.ts 1.5 KiB [built] [code generated]
+  ./src/profiles/git-v46.ts 2.6 KiB [built] [code generated]
+  ./src/profiles/test-output-v47.ts 3.7 KiB [built] [code generated]
+  ./src/profiles/build-output-v48.ts 4.8 KiB [built] [code generated]
+  ./src/profiles/grep-v49.ts 5.9 KiB [built] [code generated]
+  ./src/profiles/file-read-v50.ts 6.0 KiB [built] [code generated]
+  ./src/profiles/generic-v51.ts 7.1 KiB [built] [code generated]
+  ./src/index-v52.ts 8.2 KiB [built] [code generated]
+  ./src/engine-v53.ts 9.3 KiB [built] [code generated]
+  ./src/router-v54.ts 1.4 KiB [built] [code generated]
+  ./src/types-v55.ts 2.5 KiB [built] [code generated]
+  ./src/internal/lines-v56.ts 3.6 KiB [built] [code generated]
+  ./src/internal/signals-v57.ts 4.7 KiB [built] [code generated]
+  ./src/internal/budget-v58.ts 5.8 KiB [built] [code generated]
+  ./src/profiles/git-v59.ts 6.9 KiB [built] [code generated]
+
+warning in ./src/profiles/generic.ts
+
+Circular dependency detected:
+src/profiles/generic.ts -> src/internal/budget.ts -> src/profiles/generic.ts
+
+warning in ./src/index.ts
+
+export ScanState (reexported as ScanState) was not found in ./types (module has no exports)
+
+webpack compiled with 2 warnings in 842 ms
